@@ -1,0 +1,88 @@
+// CertificationsCarousel.module.scss
+
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .certItem {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 250px;
+    transition: transform 0.3s ease-in-out;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  
+    h3 {
+      color: var(--accent-color);
+    }
+  
+    p {
+      color: var(--text-color);
+      margin-top: 0.5rem;
+    }
+  }
+  
+  .certImage {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .navButton {
+    background: none;
+    border: none;
+    color: var(--accent-color);
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+  
+    &:disabled {
+      color: rgba(255, 255, 255, 0.3);
+      cursor: not-allowed;
+    }
+  
+    &:first-of-type {
+      left: -40px;
+    }
+  
+    &:last-of-type {
+      right: -40px;
+    }
+  }
+  
+  .dots {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+  
+      &.active {
+        background-color: var(--accent-color);
+      }
+    }
+  }
+  

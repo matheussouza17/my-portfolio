@@ -1,0 +1,83 @@
+// styles.module.scss
+.homeContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  
+  .name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+
+  .title {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-top: 0.5rem;
+  }
+}
+
+.about {
+  background-color: rgba(255, 255, 255, 0.05); // Transparência sutil
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: var(--text-color);
+  }
+}
+
+.projects {
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+  }
+
+  .projectItem {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+
+    h3 {
+      font-size: 1.5rem;
+      color: var(--accent-color);
+    }
+
+    p {
+      color: var(--text-color);
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid var(--primary-color);
+
+  p {
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+  }
+
+  a {
+    margin: 0 10px;
+    color: var(--accent-color);
+  }
+}
