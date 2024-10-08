@@ -9,9 +9,9 @@
   
   .carousel {
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem;
     justify-content: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     width: 100%;
   }
   
@@ -20,27 +20,35 @@
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    min-width: 250px;
+    width: 250px;  // Definindo um tamanho fixo para o card de certificação
+    height: 300px; // Altura fixa para manter consistência
     transition: transform 0.3s ease-in-out;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; // Garante que a imagem e o texto fiquem distribuídos
+  
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.05); // Expansão suave ao passar o mouse
+    }
+  
+    img {
+      width: 120px;  // Definindo o tamanho máximo da imagem da certificação
+      height: auto;  // Mantendo a proporção da imagem
+      max-height: 80px; // Garantindo que a imagem não ultrapasse essa altura
+      margin-bottom: 1rem;
+      object-fit: contain; // Garante que a imagem se ajuste ao espaço sem distorção
     }
   
     h3 {
       color: var(--accent-color);
+      font-size: 1.1rem;
     }
   
     p {
       color: var(--text-color);
-      margin-top: 0.5rem;
+      font-size: 0.9rem;
     }
-  }
-  
-  .certImage {
-    width: 100px;
-    height: auto;
-    margin-bottom: 1rem;
   }
   
   .navButton {

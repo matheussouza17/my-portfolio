@@ -20,19 +20,24 @@
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
-    min-width: 250px;
+    width: 250px;  // Definindo um tamanho fixo para o card
+    height: 300px; // Altura fixa para manter consistência
     transition: transform 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
   
     &:hover {
-      transform: scale(1.05);
+      transform: scale(1.05); // Expansão suave ao passar o mouse
     }
   
     img {
-      max-width: 100px;
+      width: 120px;  // Definindo o tamanho máximo da imagem
+      height: auto;  // Mantendo a proporção da imagem
+      max-height: 80px; // Garantindo que não ultrapasse a altura
       margin-bottom: 1rem;
+      object-fit: contain; // Garante que a imagem se ajuste ao espaço sem distorção
     }
   
     .clientInfo {
@@ -45,6 +50,8 @@
   
       p {
         color: var(--text-color);
+        font-size: 0.9rem;
+        line-height: 1.4;
       }
     }
   }
