@@ -1,7 +1,15 @@
 import React from 'react';
 import styles from './NavBar.module.scss';
 
-const NavBar: React.FC = () => {
+type NavBarProps = {
+  labels: {
+    about: string;
+    projects: string;
+    certifications: string;
+  };
+};
+
+const NavBar: React.FC<NavBarProps> = ({ labels }) => {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
@@ -13,13 +21,13 @@ const NavBar: React.FC = () => {
     <nav className={styles.navBar}>
       <ul>
         <li>
-          <button onClick={() => scrollToSection('about')}>About</button>
+          <button onClick={() => scrollToSection('about')}>{labels.about}</button>
         </li>
         <li>
-          <button onClick={() => scrollToSection('projects')}>Projects</button>
+          <button onClick={() => scrollToSection('projects')}>{labels.projects}</button>
         </li>
         <li>
-          <button onClick={() => scrollToSection('certifications')}>Certifications</button>
+          <button onClick={() => scrollToSection('certifications')}>{labels.certifications}</button>
         </li>
         {/* <li>
           <button onClick={() => scrollToSection('footer')}>Contact</button>

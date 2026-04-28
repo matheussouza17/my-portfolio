@@ -4,38 +4,45 @@ import Image from 'next/image';
 
 const certifications = [
   { 
-    name: 'Outsystems Certified Associate Developer', 
-    year: 2022, 
+    name: 'OutSystems Associate Reactive Developer', 
+    year: 2023, 
     logo: '/imagesCetification/outsystems-cert.png', 
-    description: 'Certified for developing applications with Outsystems technology.',
-    link: 'https://www.outsystems.com/profile/auvjvktewk'
+    description: 'Certification focused on developing reactive applications with OutSystems 11.',
+    link: 'https://outsystems.com/profile/auvjvktewk'
   },
   { 
-    name: 'Node.js Backend Developer Certification', 
-    year: 2020, 
-    logo: '/imagesCetification/nodejs-cert.png', 
-    description: 'Certified in building robust backend systems with Node.js.',
-    link: '#'
-  },
-  { 
-    name: 'Outsystems Certified Associate Developer ODC', 
+    name: 'Associate Developer (ODC)', 
     year: 2024, 
     logo: '/imagesCetification/outsystemsodc-cert.png', 
-    description: 'Certified for developing applications with Outsystems ODC technology.',
-    link: 'https://www.outsystems.com/profile/auvjvktewk'
+    description: 'OutSystems Developer Cloud certification for modern application delivery.',
+    link: 'https://outsystems.com/profile/auvjvktewk/learn'
+  },
+  { 
+    name: 'Mobile Developer Specialist (OutSystems 11 and ODC)', 
+    year: 2024, 
+    logo: '/imagesCetification/outsystemsodc-cert.png', 
+    description: 'Specialization in mobile development using OutSystems 11 and ODC.',
+    link: 'https://outsystems.com/profile/auvjvktewk/learn'
+  },
+  { 
+    name: 'Architecture Specialist (O11)', 
+    year: 2025, 
+    logo: '/imagesCetification/arquiteto.png', 
+    description: 'Advanced certification in OutSystems 11 architecture and solution design.',
+    link: 'https://www.outsystems.com/profile/auvjvktewk/learn'
   },
   { 
     name: 'REST APIs com Python e Flask', 
-    year: 2023, 
+    year: 2024, 
     logo: '/imagesCetification/python.png', 
-    description: 'Certified in building robust backend systems with python with flask.',
-    link: 'https://www.udemy.com/certificate/UC-17f2cf32-0be8-4825-b18a-da76768adeed/'
+    description: 'Training focused on REST API design and implementation with Python and Flask.',
+    link: 'https://ude.my/UC-17f2cf32-0be8-4825-b18a-da76768adeed'
   },
   { 
-    name: 'Figma', 
-    year: 2023, 
+    name: 'Construa prototipos rapidos e funcionais com Figma', 
+    year: 2024, 
     logo: '/imagesCetification/figma.webp', 
-    description: 'Certified in building fast, functional prototypes with Figma.',
+    description: 'Hands-on course on creating fast and functional product prototypes in Figma.',
     link: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-702a6e22-74f2-4c2a-826b-18ffdb47e24a.pdf'
   },
   { 
@@ -50,14 +57,28 @@ const certifications = [
     year: 2023, 
     logo: '/imagesCetification/scrum.png', 
     description: 'Certified in Agile SCRUM - The Practical and Definitive Guide.',
-    link: 'https://www.udemy.com/certificate/UC-db01dc48-b8d4-4447-917a-b690e1f75f2e/'
+    link: 'https://ude.my/UC-db01dc48-b8d4-4447-917a-b690e1f75f2e'
   },
   { 
-    name: 'Business English', 
+    name: 'Ingles para Negocios', 
     year: 2023, 
     logo: '/imagesCetification/BusinessEnglish.png', 
-    description: 'Certified in Business for English.',
-    link: 'https://www.udemy.com/certificate/UC-f28ef91d-700f-41d9-ba09-1bf8232f6671/'
+    description: 'Business English course aimed at communication in professional environments.',
+    link: 'https://askblue.udemy.com/certificate/UC-f28ef91d-700f-41d9-ba09-1bf8232f6671/'
+  },
+  { 
+    name: 'O Poder da Escuta Ativa', 
+    year: 2023, 
+    logo: '/imagesCetification/ActiveListening.png', 
+    description: 'Course focused on active listening and communication skills.',
+    link: 'https://udemy-certificate.s3.amazonaws.com/pdf/UC-fc28b08c-9c1b-49a3-9909-0d8b623b6607.pdf'
+  },
+  { 
+    name: 'Desenvolvimento de Lideranca', 
+    year: 2023, 
+    logo: '/imagesCetification/Leadership.png', 
+    description: 'Leadership development training for teamwork and growth.',
+    link: 'https://udemy.com/certificate/UC-f9e33dde-99ce-48a8-9e6d-90eb4c3ba7f7/'
   },
 ];
 
