@@ -2,14 +2,20 @@ import React from 'react';
 import styles from './NavBar.module.scss';
 
 type NavBarProps = {
-  labels: {
+  labels?: {
     about: string;
     projects: string;
     certifications: string;
   };
 };
 
-const NavBar: React.FC<NavBarProps> = ({ labels }) => {
+const defaultLabels = {
+  about: 'About',
+  projects: 'Projects',
+  certifications: 'Certifications',
+};
+
+const NavBar: React.FC<NavBarProps> = ({ labels = defaultLabels }) => {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     if (section) {
